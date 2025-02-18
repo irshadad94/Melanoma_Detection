@@ -27,45 +27,34 @@ The data set contains the following diseases:
 - Seborrheic keratosis
 - Squamous cell carcinoma
 - Vascular lesion
+  
 ![image](https://github.com/user-attachments/assets/18f33c59-e724-4ffd-96f6-384832110bb7)
 
-
-
-
-
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+## CNN Architecture
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
+- Melanoma and Pigmented Benign Keratosis have significantly higher numbers of images compared to other categories. This suggests a larger dataset or focus on these particular skin lesion types.
+- Basal Cell Carcinoma and Nevus show a moderate number of images, indicating a reasonable amount of data available for these categories.
+- Actinic Keratosis, Dermatofibroma, Seborrheic Keratosis, Squamous Cell Carcinoma, and Vascular Lesion have comparatively fewer images. This could imply less data availability or potentially lower prevalence in the studied dataset.
+- Applied CNN with multiple entries of hyperparameter by adding/removing dropout, batch normalization, rescaling, augmenting and call back.
+- Final model has train_accuracy: 0.8227 - loss: 0.4670 & val_accuracy: 0.8077 - val_loss: 0.5631
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Google Collab 1.2.0
+- tensorflow 2.18.0
+- keras 3.8.0
+- pandas 2.2.2
+- matplotlib 3.10.0
+- Augmentor-0.2.12
+- numpy - 1.26.4
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
+## References
+- Efficient way to build CNN architecture from https://towardsdatascience.com/a-guide-to-an-efficient-way-to-build-neural-network-architectures-part-ii-hyper-parameter-42efca01e5d7
 
 
 <!-- Optional -->
