@@ -32,6 +32,22 @@ The data set contains the following diseases:
 
 ## CNN Architecture
 
+1. *Rescaling Layer* - This layer normalizes input values from the range [0, 255] to [0, 1], ensuring better performance and stability during training.
+2. *Convolutional Layer* - Applies a convolution operation to the input, extracting essential features by combining pixel values within a receptive field. This process reduces image size while retaining important spatial information.
+3. *Pooling Layer* - Reduces the spatial dimensions of feature maps, lowering computational complexity and minimizing the number of parameters. It effectively summarizes key features from the convolutional layer’s output.
+4. *Dropout Layer* - Randomly deactivates a fraction of neurons during training to prevent overfitting and improve model generalization.
+5. *Flatten Layer* - Converts multi-dimensional feature maps into a one-dimensional vector, preparing the data for fully connected layers.
+6. *Dense Layer* - A fully connected neural network layer where each neuron receives input from all previous layer neurons, facilitating feature learning and classification.
+7. *ReLU Activation Function* - The Rectified Linear Unit (ReLU) introduces non-linearity by passing positive values unchanged while setting negative values to zero. It helps address the vanishing gradient problem and speeds up training.
+8. *Softmax Activation Function* - Typically used in the output layer, Softmax converts logits into probability distributions, ensuring that the sum of all class probabilities equals one.
+
+**Callbacks:**
+
+1. *Model Checkpoint*: Saves the best model weights during training, ensuring the best-performing model is retained.
+2. *Early Stopping*: Monitors validation loss and stops training when no further improvement is detected, preventing overfitting.
+
+**Training Configuration**
+Epochs: 50 (The model will train for up to 50 epochs unless early stopping is triggered).
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
